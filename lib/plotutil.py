@@ -8,7 +8,7 @@ from exceptions import InvalidFunctionException
 
 
 def create_y_values(func, xvals):
-
+    """This function will create the ordinate values for the given function that is to be plotted"""
     # Create function ordinate values
     yvals = []
     for x in xvals:
@@ -21,7 +21,19 @@ def create_y_values(func, xvals):
     return yvals
 
 def plot(func, xpoints, color_name, xlabel, ylabel, theme, gui, line_style, file_path, discrete=False):
-
+    """This function will show the summary of the plotted function
+    func: function plotted
+    xpoints: points on x-axix
+    color_name: color of the plot
+    xlabel: label on x-axis
+    ylabel: label on y-axis
+    theme: background theme
+    gui: show in gui (true or false)
+    line_style: line style of plotted graph
+    file_path: path for saving the graph 
+    discrete: discrete points )true or false)
+              (false by default)
+    """
     # Show plot summary
     print('***** Plot Summary *****')
     print("Funtion: {}".format(func))

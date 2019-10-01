@@ -390,6 +390,9 @@ class New_Toplevel_1:
 
 
     def Dropdown_Changed(self, current_color):
+        """To change the color of drop-down menu
+        current_color: current color
+        """
         color = '#000000'
         if current_color == 'Red':
             color = '#FF0000'
@@ -405,6 +408,7 @@ class New_Toplevel_1:
         self.color_input.insert(0, color)
 
     def changeTheme(self):
+        """To change the background theme"""
         if self.bt_themeswitch['text'] == "Light Theme":
             self.bt_themeswitch.configure(text="Dark Theme")
             self.Canvas1.configure(background=_bgcolorlight)
@@ -519,6 +523,7 @@ class New_Toplevel_1:
         self.rePlot(self.radiovar.get())
 
     def resize_plot(self, event):
+        """To resize the Plot"""
         if gui_support.plotted:
             gui_support.Plot(self.fx.get(), range(int(self.x_lower.get()),
                              int(self.x_upper.get())), self.color_input.get(),

@@ -61,6 +61,7 @@ def Plot_line(arrays, color_name, theme, canvas, line_style, file_path):
 
 
 def init(top, gui, *args, **kwargs):
+    """To initiate the GUI window"""
     global w, top_level, root
     w = gui
     top_level = top
@@ -68,6 +69,7 @@ def init(top, gui, *args, **kwargs):
 
 
 def destroy_window():
+    """To close or destroy the current window"""
     # Function which closes the window.
     global top_level
     top_level.destroy()
